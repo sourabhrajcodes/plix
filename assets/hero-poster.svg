@@ -1,0 +1,23 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fdfcf8"/>
+      <stop offset="55%" stop-color="#f6efe0"/>
+      <stop offset="100%" stop-color="#e8dcc6"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="78%" cy="78%" r="55%">
+      <stop offset="0%" stop-color="#c5a065" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#c5a065" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#g)"/>
+  <rect width="1920" height="1080" fill="url(#glow)"/>
+  <g opacity="0.07" stroke="#0a0a0b" stroke-width="1">
+    <line x1="0" y1="270" x2="1920" y2="270"/><line x1="0" y1="540" x2="1920" y2="540"/><line x1="0" y1="810" x2="1920" y2="810"/>
+    <line x1="480" y1="0" x2="480" y2="1080"/><line x1="960" y1="0" x2="960" y2="1080"/><line x1="1440" y1="0" x2="1440" y2="1080"/>
+  </g>
+  <g font-family="Inter, sans-serif" text-anchor="middle">
+    <text x="960" y="520" font-size="22" letter-spacing="8" fill="#9a8a6b" font-weight="600">PLIXMEDIA — AIRBNB EDITING</text>
+    <text x="960" y="600" font-size="64" letter-spacing="6" fill="#0a0a0b" opacity="0.06" font-weight="700">LISTING STILL</text>
+  </g>
+</svg>
