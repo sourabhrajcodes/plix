@@ -1,10 +1,16 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="premium">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="color-scheme" content="light">
-  <meta name="theme-color" content="#fdfcf8">
+  <meta name="theme-color" content="#fdfcf8" id="metaTheme">
+  <script>
+    try {
+      var t = localStorage.getItem("plix-re-theme");
+      if (t === "minimal" || t === "premium") document.documentElement.setAttribute("data-theme", t);
+    } catch (e) {}
+  </script>
   <meta name="format-detection" content="telephone=no">
   <title>PlixMedia — Real Estate Video Editing by Saksham Raj</title>
   <meta name="description" content="Real Estate video editing by Saksham Raj (PlixMedia). Reels, listing films, drone exterior + amenity highlights that sell properties faster. 48h turnaround.">
@@ -26,8 +32,13 @@
   <link rel="preload" as="image" href="assets/hero-poster.svg" fetchpriority="high">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@1,500;1,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/minimal.css">
 </head>
 <body>
+  <div class="topbar" aria-hidden="true">
+    <span>Welcome to <strong>PlixMedia Real Estate</strong> — Listing videos that get enquiries</span>
+    <span class="topbar-right"><a href="#work">All Work</a><a href="#services">Services</a><a href="#contact">Free Sample</a></span>
+  </div>
   <header class="nav">
     <a class="logo" href="#home">PLIX<span>MEDIA</span><em> REAL ESTATE</em></a>
     <button id="navToggle" class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
@@ -38,6 +49,7 @@
       <a href="#services">Services</a>
       <a href="#process">Process</a>
       <a href="#contact" class="nav-cta">Get Free Sample</a>
+      <button id="themeToggle" class="theme-toggle" type="button" aria-pressed="false" title="Switch design">Minimal</button>
     </nav>
   </header>
 
@@ -242,8 +254,8 @@
     </div>
   </div>
 
-  <script src="js/projects.js?v=12" defer></script>
-  <script src="js/main.js?v=12" defer></script>
+  <script src="js/projects.js?v=13" defer></script>
+  <script src="js/main.js?v=13" defer></script>
 </body>
 </html>
 

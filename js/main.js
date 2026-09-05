@@ -379,3 +379,32 @@ if (document.readyState === "loading") {
 } else {
   whenIdle(initPage);
 }
+
+// ── Design switcher: Premium (default) <-> Minimal (clean functional) ──
+(function initThemeSwitcher() {
+  const toggle = document.getElementById("themeToggle");
+  const metaTheme = document.getElementById("metaTheme");
+  if (!toggle) return;
+
+  function applyTheme(theme) {
+    document.documentElement.setAttribute("data-theme", theme);
+    try { localStorage.setItem("plix-re-theme", theme); } catch (e) {}
+    const isMinimal = theme === "minimal";
+    toggle.textContent = isMinimal ? "Premium" : "Minimal";
+    toggle.setAttribute("aria-pressed", String(isMinimal));
+    toggle.title = isMinimal ? "Switch to Premium design" : "Switch to Minimal design";
+    if (metaTheme) metaTheme.setAttribute("content", isMinimal ? "#ffffff" : "#fdfcf8");
+  }
+
+  let initial = "premium";
+  try {
+    const saved = localStorage.getItem("plix-re-theme");
+    if (saved === "minimal" || saved === "premium") initial = saved;
+  } catch (e) {}
+  applyTheme(document.documentElement.getAttribute("data-theme") || initial);
+
+  toggle.addEventListener("click", function() {
+    const current = document.documentElement.getAttribute("data-theme") === "minimal" ? "minimal" : "premium";
+    applyTheme(current === "minimal" ? "premium" : "minimal");
+  });
+})();
