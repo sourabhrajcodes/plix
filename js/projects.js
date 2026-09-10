@@ -37,7 +37,7 @@ const PROJECTS = [
     year: 2026,
     duration: "1:10",
     embedUrl: "https://www.youtube.com/embed/x0VRA_zbS-I",
-    thumbnail: "https://i.ytimg.com/vi/x0VRA_zbS-I/maxresdefault.jpg",
+    thumbnail: "https://i.ytimg.com/vi/x0VRA_zbS-I/sddefault.jpg",
     description: "New listing film edited by Saksham Raj — https://youtu.be/x0VRA_zbS-I"
   },
   {
@@ -70,7 +70,7 @@ const PROJECTS = [
     year: 2026,
     duration: "0:28",
     embedUrl: "https://www.youtube.com/embed/Qvb72uHwRZQ",
-    thumbnail: "https://i.ytimg.com/vi/Qvb72uHwRZQ/maxresdefault.jpg",
+    thumbnail: "https://i.ytimg.com/vi/Qvb72uHwRZQ/sddefault.jpg",
     description: "YouTube Short edited by Saksham Raj — replaces Instagram reel https://www.instagram.com/reel/DcRO1iBSkt2/"
   },
   {
@@ -81,7 +81,7 @@ const PROJECTS = [
     year: 2026,
     duration: "0:32",
     embedUrl: "https://www.youtube.com/embed/mbW_UFgAaDs",
-    thumbnail: "https://i.ytimg.com/vi/mbW_UFgAaDs/maxresdefault.jpg",
+    thumbnail: "https://i.ytimg.com/vi/mbW_UFgAaDs/sddefault.jpg",
     description: "YouTube Short edited by Saksham Raj — replaces Instagram reel https://www.instagram.com/reel/DcOl-FDSiTO/"
   }
 ];
